@@ -59,7 +59,26 @@
         background-color: transparent;
         border-radius: 10%;      
     }
-
+    button:hover {
+        background-color: lightgreen;
+    }
+    input:focus {
+        border: 3px solid green;
+    }
+    li {
+        font-size: 25px;
+    }
+    li:nth-child(odd) {
+        background-color: lightgreen;
+    }
+    .quote::before {
+        content: '"'; /* opeging quote. this is a comment*/
+        color:gray;
+    }
+    .quote::after {
+        content:'"';
+        color:aqua;
+    }
 
 </style>
 </head>
@@ -71,7 +90,9 @@
     <button>
         <a href="./pagetest.html"> Page test</a>
     </button>
-    <button> teste 2</button>
+    <button>
+        <a href="project.html">Project</a>
+    </button>
     <br>
     <br>
     <p37> Index </p37>
@@ -97,14 +118,25 @@
 <p40> Font size 40px P40</p40>
 <br>
 <p41> Font size 40px P41 White</p41>
-<br>
 <h50> Test H50</50>
-<br>
 <h80> Test H80</h80>
-
 <br>
-<br>
-<br>
+<hr>
+<button>Hover me</button>
+<input type="text" placeholder="Click here" />
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    </ol>
+    <hr>
+    <p class="quote">This is a quote</p>
+    <hr>
 <footer>
     <p21>&copy Made by Robson Paolini - <a style="color:black"; href="mailto:robsonpaolini@gmail.com">Contact</a></p21>
 </footer>
