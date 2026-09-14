@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Index 7</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="learn web dev" />
+        <meta name="keywords" content="html, css, javascritp" />
+        <meta name="author" content="Robson" />
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            /* .block {
+                background-color: lightcyan;
+                padding: 10px;
+            }
+
+            .inline{
+                background-color:lightgreen;
+                padding: 5px;
+            } */
+
+            /* span {
+                display: block;
+                width: 200px;
+                } */
+
+            .title {
+                background-color:orange;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+
+             .static {
+                position: static;
+            }
+
+            .relative {
+                position: relative;
+                /* top: px; */
+                left: 30px;
+            }
+
+            .fixed {
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                background-color: yellow;
+            }
+
+
+            /* div {
+                display: inline;
+            } */
+             
+            /* .hidden {
+                display:none;
+            } */
+
+            .parent {
+                position: relative;
+                width: 300px;
+                height: 1000px;
+                background-color:lightgreen;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                border-radius: 10px;
+            }
+
+            .absolute {
+                position: absolute;
+                top: 50px;
+                left: 100px;
+                background-color: gray;
+            }
+
+            .sticky {
+                position: sticky;
+                top: 0;
+                padding: 10px;
+                background-color: white;
+                z-index: 1000; /* Garante que esse elemento sempre vai ficar acima dos outros */
+            }
+            .shadow {
+                border-radius: 10%;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .box {
+                position: fixed;
+                padding: 20px;
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px;
+
+            }
+
+            .one {
+                background-color: red;
+                z-index: 1;
+                top: 250px;
+                left:1700px;
+            }
+
+            .two {
+                background-color: blue;
+                z-index: 2;
+                top: 400px;
+                left: 1700px;
+            }
+
+            .three {
+                background-color: orange;
+                z-index: 2;
+                top: 550px;
+                left: 1700px;
+                overflow: auto;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:gray">
+       
+        <header class="sticky"> I am sticky
+            <div class="title">
+                <h1 style="text-align: right">Index 7</h1>
+                
+                <div style="padding: 20px">
+                    <button class="shadow">
+                    <a href="./page2.html" style="color: black" class="none">Styling Font</a>
+                    </button>
+                    <button class="shadow">
+                    <a href="./page3.html" style="color: black" class="none">Blog-post</a>
+                    </button>
+                    <button class="shadow">
+                    <a href="./page4.html" style="color: black" class="none">Text Colors</a>
+                    </button>
+                    <button class="shadow">
+                    <a href="./page5.html" style="color: black" class="none">Page 5</a>
+                    </button>
+                    <button class="shadow">
+                    <a href="./page6.html" style="color: black" class="none">Page 6</a>
+                    </button>
+                </div>
+            </div>
+         </header>
+
+
+            <p class="staitc"> I am static</p>
+            <div class="relative">I am relative</div>
+            <div class="fixed">I am fixed</div>
+            
+            <div class="parent">
+                <div class="absolute">I am absolute</div>
+            </div>
+            <div class="box one">box one</div>
+            <div class="box two">box two (above)</div>
+            <div class="box three">Box ThreeBoxBox ThreeBox ThreeBox ThreeBox ThreeBox ThreeBox ThreeBox Three </div>
+
+
+            
+
+            
+
+
+        
+        <!-- <div class="block">I am a block element</div>
+        <div class="hid"> div acting like span</div>
+        <br>
+        <span class="inline">I am inline</span>
+        <span class="inline">I am inline too</span> -->
+
+
+        <br>
+        <br>
+        <br>
+        <hr>
+        <footer>
+            <p style="text-align:center">&copy Made by Robson Paolini <a href="mailto:robsonpaolini@gmail.com" style=color:black class="none">Contat</a></p>
+        <hr>
+        </footer>
+    </body>
+</html>

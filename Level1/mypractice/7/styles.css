@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding: 0;
+    height: 150vh;
+    }
+
+.navibar {
+    position: sticky;
+    top: 0;
+    background-color: orange;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+
+}
+
+.serif {
+    font-family: "Time New Roman", serif;
+}
+
+.sans-serif {
+    font-family: Arial, sans-serif;
+}
+
+.monospace {
+    font-family: "Courier New", monospace;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.medium {
+    font-size: 18px;
+}
+
+.large {
+    font-size: 24px;
+}
+
+.relative-size {
+    font-size: 1.5em;
+}
+
+.viewport-size {
+    font-size: 5vw;
+}
+
+.light {
+    font-weight:200;
+}
+
+.normal {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.spacing {
+ line-height: 1.8;  /* 1.8 times font-size */
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.word-spacing {
+    word-spacing: 10px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.none {
+    text-decoration: none;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.blog-post {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight:700;
+    text-transform: uppercase;
+}
+
+.intro {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: right;   
+}
+
+.content {
+    font-size: 16px;
+    color: gray;
+}
+
