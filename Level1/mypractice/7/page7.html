@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flexbox</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Learnt css" />
+        <meat name="keywords" content="html, css, javascript" />
+        <meta name="author" content="Robson Paolini" />
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+
+            .flex-container {
+                display: flex;
+                background-color: lightgreen;
+                padding: 20px;
+                /* flex-direction: column; */
+                justify-content: flex-start;
+                height:200px;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .item {
+                background-color: lightgray;
+                color: white;
+                padding: 20px;
+                margin: 5px;
+            }
+
+            /* .item:nth-child(2) {
+                align-self: flex-end;
+            } */
+
+        
+        </style>
+
+
+    </head>
+
+
+    <body style="background-color: gray">
+
+        <header class="navibar">
+            <h2> Flexbox</h2>
+            <button class="shadow">
+            <a href="./index.html" class="none" style="color:black">Home</a>
+            </button>
+        </header>
+        
+            <div class="flex-container">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+                <div class="item">Item 7</div>
+                <div class="item">Item 8</div>
+                <div class="item">Item 9</div>
+            </div>
+        
+        <hr>
+        <footer>
+            <p style="text-align:center">&copy Made by Robson Paolini <a href="mailto:robsonpaolini@gmail.com" class="none" style="color:black">Contact</a></p>
+        </footer>
+     
+        <hr>
+        
+    </body>
+</html>

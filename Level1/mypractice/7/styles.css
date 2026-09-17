@@ -247,3 +247,9 @@ main {
     text-transform: uppercase;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+.shadow {
+         border-radius: 10%;
+         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+     }
+

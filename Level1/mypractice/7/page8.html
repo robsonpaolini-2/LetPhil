@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pricing plans</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Learnt css" />
+        <meat name="keywords" content="html, css, javascript" />
+        <meta name="author" content="Robson Paolini" />
+        <link rel="stylesheet" href="styles.css" />
+        
+        <style>
+ 
+         body {
+                font-family: arial, sans-serif;
+               
+              
+            }
+
+            .pricing {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                height: 100vh;
+            }
+
+            .card {
+                background-color: lightgreen;
+                flex: 1;
+                padding: 20px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .card:nth-child(1)::before {
+                content: "  $3  ";
+            }
+
+            .card:nth-child(2)::before {
+                content: " $5 ";
+            }
+
+            .card:nth-child(3)::before {
+                content: " $8 ";
+            }
+
+
+        </style>
+
+    </head>
+
+
+    <body style="background-color: gray">
+
+        <header class="navibar head">
+            <h2>Pricing Plans</h2>
+
+            <button class="shadow">
+            <a href="./index.html" class="none" style="color:black">Home</a>
+            </button>
+
+        </header>
+        
+        <section class="pricing">
+            <div class="card">Basic</div>
+            <div class="card">Professional</div>
+            <div class="card">Premium</div>
+        </section>
+           
+
+        <hr>
+        <footer>
+            <p style="text-align:center">&copy Made by Robson Paolini <a href="mailto:robsonpaolini@gmail.com" class="none" style="color:black">Contact</a></p>
+        </footer>
+     
+        <hr>
+        
+    </body>
+</html>
