@@ -18,6 +18,7 @@ body {
     align-items: center;
     gap: 10px;
     height: 100vh;
+    
 }
 .div2 {
     f
@@ -28,4 +29,16 @@ body {
     border-radius: 10px;
     gap: 20px;
    
+}
+
+.none {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    font-size: 20px;
+    background-color: lightcyan;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
