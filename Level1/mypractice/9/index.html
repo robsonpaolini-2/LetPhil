@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* .grid-container {
+        display: grid;
+        background-color: lightgray;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        place-items: center;
+    } */
+
+    /* .item {
+        background-color: cyan;
+        color: black;
+        padding: 20px;
+        margin: 5px;
+        width: 200px
+    } */
+
+    /* .item:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 2;
+    } */
+
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: 80px 1fr 60px;
+        grid-template-areas:
+            "header header"
+            "sidebar content"
+            "footer footer"
+    }
+
+    .header { grid-area: header; background: lightblue; }
+
+    .sidebar { grid-area: sidebar; background: white; }
+       
+
+    .content {
+        grid-area: content; background: blue;
+    }
+
+    .footer {
+        grid-area: footer; background: yellow;
+    }
+
+</style>
+
+</head>
+<body style="background-color: gray">
+
+    <div class="grid-container2">
+        <header class="header">Header</header>
+        <aside class="sidebar">Sidebar</aside>
+        <main class="content">content</main>
+        <footer class="footer">Footer</footer>
+    </div>
+    <br>
+    <br>
+
+
+
+    
+
+    <!-- <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div> -->
+
+
+</body>
+</html>
