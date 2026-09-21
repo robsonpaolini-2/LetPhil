@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+        @media ( max-width: 768px) {
+            body {
+                background-color: blue;
+                color: white;
+            }
+            h1 {
+                font-size: 2rem;
+                color: white;
+            }
+        }
+
+        @media ( max-width: 480px) {
+            body {
+                background-color: red;
+                    color: white;
+            }
+            h1 {
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> Resize window o change background color</h1>
+
+    <h1>Responsive Typography</h1>
+    <p>This text changes size based on screen width</p>
+    <button>
+        <a href="./index.html">Page 1</a>
+    </button>
+    <button>
+        <a href="./index2.html">Page 2</a>
+    </button>
+    </body>
+</html>
