@@ -9,17 +9,63 @@
     <style>
         .button {
             font-size: 20px;
-            background-color: lightcyan;
-            border-radius: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            border: 0px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
 
         .none {
             text-decoration: none;
         }
+
+        .img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .mini {
+            background-color: transparent;
+            /* padding: 20px; */
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+        }
+
+        .miniframe {
+            gap: 5px;
+            
+
+        }
+
+        .miniimg {
+            width: 60%;
+            
+        }
+
+        .sidebar img {
+            width: 80%;
+            aspect-ratio: 4 / 4;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .frame img {
+            width: 100%;
+            aspect-ratio: 4 / 4;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        
+        
     </style>
 </head>
-<body style="background-color:lightgray">
+<body>
     
  <div class="grid-container">
 
@@ -44,17 +90,85 @@
             </button>
         </header>
 
-        <aside class="sidebar">Sidebar</aside>
+        <aside class="sidebar miniframe">
 
-        <main class="content">
-            <article>Article 1</article>
+            <div class="mini">
+                <img src="https://images.pexels.com/photos/21768612/pexels-photo-21768612.jpeg" class="miniimg" />
+            </div>
+
+            <div class="mini">
+                <img src="https://images.pexels.com/photos/34212916/pexels-photo-34212916.jpeg" class="miniimg" />
+            </div> 
+            <div class="mini">
+                <img src="https://images.pexels.com/photos/1414535/pexels-photo-1414535.jpeg" class="miniimg" />
+            </div>
+
+            <div class="mini">
+                <img src="./u2.jpeg" class="miniimg" />
+            </div>
+
+            <div class="mini">
+                <img src="https://images.pexels.com/photos/39277916/pexels-photo-39277916.jpeg" class="miniimg" />
+            </div>
+
+            <div class="mini">
+                <img src="https://images.pexels.com/photos/29292797/pexels-photo-29292797.jpeg" class="miniimg" />
+            </div>
+
+        </aside>
+
+        <main class="frame">
+
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/8080505/pexels-photo-8080505.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="./ram2.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="./ram.jpg" class="img" />
+            </div>
+            
+            <!-- Secont row -->
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/13204813/pexels-photo-13204813.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/2785216/pexels-photo-2785216.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/11051182/pexels-photo-11051182.jpeg" class="img" />
+            </div>
+            
+            <!-- third row -->
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/36833712/pexels-photo-36833712.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/10321242/pexels-photo-10321242.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/7154760/pexels-photo-7154760.jpeg" class="img" />
+            </div>
+
+            <!-- Fourth row -->
+            <div class="frame2">
+                <img src="./ram2.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="https://images.pexels.com/photos/17590522/pexels-photo-17590522.jpeg" class="img" />
+            </div>
+            <div class="frame2">
+                <img src="./ram2.jpeg" class="img" />
+            </div>
+            <!-- <article>Article 1</article>
             <article>Article 2</article>
-            <article>Article 3</article>
+            <article>Article 3</article> -->
         </main>
         
         <footer class="footer">
             
-        <p>&copy Made by Robson Paolini - <a href="mailto:robsonpaolini@gmail.com" style="color:white" class="none">Contact</a></p>
+        <p>&copy Made by Robson Paolini - <a href="mailto:robsonpaolini@gmail.com" style="color: black" class="none">Contact</a></p>
         </footer>
 
 

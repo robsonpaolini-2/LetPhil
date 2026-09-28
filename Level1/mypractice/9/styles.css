@@ -23,25 +23,48 @@ body {
 
 .header {
     grid-area: header;
-    background-color: lightblue;
+    background-color: transparent;
     
+}
+
+.frame {
+    background-color: transparent;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 4px;
+    /* grid-template-areas:
+    "div1 div2 div3"
+    "div4 div5 div6" */
+
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: lightgray;
+    background-color: transparent;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .content {
     grid-area: content;
-    background-color: white;
+    background-color: transparent;
 }
 
 .footer {
     grid-area: footer;
-    background-color: blue;
-    color: white;
+    background-color: transparent;
+    color: black;
 }
+
+@media (max-width: 430px ) {
+    .header {
+        
+    }
+
+}
+
 
 @media (max-width: 768px) {
     .grid-container{
@@ -52,7 +75,7 @@ body {
             "content"
             "sidebar"
             "footer";
-    }
+            
 }
-
+}
 
