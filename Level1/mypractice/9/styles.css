@@ -72,7 +72,7 @@ body {
     color: black;
 }
 
-@media (max-width: 460px ) {
+/* @media (max-width: 460px ) {
     .grid-container {
         justify-content: center;
         grid-template-columns: 1fr;
@@ -88,7 +88,7 @@ body {
     }
     
     }
-    
+     */
 
 
 @media (max-width: 768px) {
@@ -100,7 +100,9 @@ body {
             "content"
             "sidebar"
             "footer";
-            
+    }
+    .footer {
+        font-size: 30px;
     }
 }
 
