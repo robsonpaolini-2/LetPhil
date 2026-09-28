@@ -7,7 +7,7 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 180px 1fr 60px;
+    grid-template-rows: auto 1fr 60px;
     grid-template-areas:
         "header header"
         "sidebar content"
@@ -24,6 +24,7 @@ body {
 .header {
     grid-area: header;
     background-color: transparent;
+    
     
 }
 
@@ -71,12 +72,12 @@ body {
     color: black;
 }
 
-@media (max-width: 430px ) {
+/* @media (max-width: 430px ) {
     .header {
         
     }
 
-}
+} */
 
 
 @media (max-width: 768px) {
