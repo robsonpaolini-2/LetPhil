@@ -74,6 +74,7 @@ body {
 
 @media (max-width: 430px ) {
     .grid-container {
+        justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -81,9 +82,13 @@ body {
             "content"
             "sidebar"
             "footer";
-        
     }
+    .footer{
+        font-size: 30px;
     }
+    
+    }
+    
 
 
 @media (max-width: 768px) {
@@ -96,6 +101,6 @@ body {
             "sidebar"
             "footer";
             
-}
+    }
 }
 
