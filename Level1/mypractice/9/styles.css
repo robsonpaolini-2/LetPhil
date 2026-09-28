@@ -72,7 +72,7 @@ body {
     color: black;
 }
 
-@media (max-width: 430px ) {
+@media (max-width: 460px ) {
     .grid-container {
         justify-content: center;
         grid-template-columns: 1fr;
