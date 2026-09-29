@@ -1,0 +1,128 @@
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+:root {
+    --primary-color: #0f0f0f0;
+    --secondary-color: #04e23800;
+    --accent-color: #ffaa3b00;
+    --background: white;
+    --color: #08a1b800;
+}
+
+body {
+    background-color: var(--background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto 1fr 60px;
+    grid-template-areas:
+        "header header"
+        "content sidebar"
+        "footer footer";
+    gap: 5px;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: orange;
+    color: var(--primary-color);
+    padding: 20px;
+    grid-area: header;
+    justify-items: center;
+}
+
+.content {
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+}
+
+.content img {
+            width: 100%;
+            aspect-ratio: 4 / 4;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+}
+
+.sidebar {
+    justify-content: center;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 20px;
+    grid-area: sidebar;
+    text-align: center;
+}
+
+.sidebar h1 {
+    font-size: 50px;
+}
+
+.footer {
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+    grid-area: footer;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover {
+    color: white;
+}
+
+.header h1 {
+    font-size: 100px;
+    color: blue;
+}
+
+.footer a {
+    font-size: 20px
+}
+
+main a:hover {
+    color: lightgreen;
+}
+
+main a {
+    font-size: 20px;
+}
+
+@media(max-width: 768px) {
+   .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header"
+            "content"
+            "sidebar"
+            "footer";
+    }
+    .footer {
+        font-size: 30px;
+    }
+}

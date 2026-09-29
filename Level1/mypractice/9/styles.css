@@ -70,6 +70,8 @@ body {
     grid-area: footer;
     background-color: transparent;
     color: black;
+    font-size: 20px;
+    justify-content: center center;
 }
 
 /* @media (max-width: 460px ) {
@@ -106,3 +108,7 @@ body {
     }
 }
 
+.text-h3 {
+    border-left: black;
+    border-radius: 2px;
+}
