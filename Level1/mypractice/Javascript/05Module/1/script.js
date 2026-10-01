@@ -88,5 +88,21 @@ console.log(person);
 
 console.log(person.name);
 
+person.country = "USA";
+console.log(person);
+
+person.age = 43;
+console.log(person);
+
+delete person.age;
+
+console.log(person);
 
 
+
+// Looping Through Objects with (for...in)
+
+for (const key in person) {
+    console.log("key =", key);
+    console.log("value =", person[key]);
+}
