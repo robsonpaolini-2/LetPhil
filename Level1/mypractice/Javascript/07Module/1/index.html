@@ -3,10 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>05 Module Arrays and Objects</title>
+    <title>07 DOM Exemplo</title>
     <script src="script.js"></script>
+    <style>
+        .highlight {
+            background-color: orange;
+            color: gray;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body style="background-color:gray">
     
+    <h1 id="main-heading">Welcome to Javascript</h1>
+
+    <p id="p"  class="description">This is a paragraph 1</p>
+    <p id="p"  class="description">This is a paragraph 2</p>
+    <p id="p"  class="description">This is a paragraph 3</p>
+    
+
+     <button>Click Me 2</button>
+    <button id="button" onclick="changeText()">Click Me</button>
+
+
+    <script>
+        function changeText() {
+            document.getElementById("main-heading").textContent = 
+                "DOM Manipulation is Awsome!!"
+        }
+
+
+        console.log(document.getElementById("main-heading").textContent);
+
+        console.log(document.getElementById("p").textContent);
+
+        console.log(document.getElementById("button").textContent);
+
+        // const paragraphs = document.getElementsByClassName("description");
+        // // console.log("paragraphs =", paragraphs);
+        // console.log("paragraphs[0].textContent =", paragraphs[1].textContent);
+
+
+        // const buttons = document.getElementsByTagName("button");
+        console.log("--------------------------------------");
+        // console.log(buttons[0].textContent);
+
+
+        // const firstParagraph = document.querySelector(".description");
+        // console.log(firstParagraph.textContent);
+
+        // const allParagraphs = document.querySelectorAll(".description");
+        // // console.log(allParagraphs);
+        // allParagraphs.forEach((teste) => console.log(teste.textContent));
+
+
+
+        // Modify Elements
+
+        // const heading = document.getElementById("main-heading");
+        // heading.textContent = "NEW HEADING";
+        // heading.innerHTML = "<span style='color: red'>styled</span> heading";
+
+        // heading.style.color = "yellow";
+        // heading.style.fontSize = "60px";
+        // heading.style.textAlign = "center";
+
+
+        // // ADDING / REMOVING / CREATING
+        // const newParagraph = document.createElement("h1");
+        // newParagraph.textContent = "THIS IS A PARAGRAPH";
+
+        // // document.body.appendChild(newParagraph);
+
+
+        // // document.querySelector("button").addEventListener("click", function() {
+        // //         document.body.removeChild(newParagraph);
+        // // });
+
+        // document.querySelector("button").addEventListener("click", function() {
+        //         document.body.appendChild(newParagraph);
+        // });
+
+
+        // const heading = document.getElementById("main-heading");
+        // heading.classList.add("highlight")
+
+        // document.querySelector("button").addEventListener("click", function() {
+        //     heading.classList.remove("highlight");
+        // })
+
+        const link = document.createElement("a")
+        link.setAttribute("href", "https://google.com");
+        link.setAttribute("target", "_blank");
+        link.textContent = "VISIT website";
+        document.body.appendChild(link);
+        
+    </script>
+   
 </body>
 </html>
