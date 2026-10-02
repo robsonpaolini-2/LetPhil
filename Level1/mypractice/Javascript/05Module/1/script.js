@@ -104,5 +104,5 @@ console.log(person);
 
 for (const key in person) {
     console.log("key =", key);
-    console.log("value =", person[key]);
+    console.log("value =", person[key])
 }
