@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>05 Module Arrays and Objects</title>
-    <script src="script.js"></script>
+    <title>Simulated API call</title>
+    <style> 
+        body {
+            font-family: Aria, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #loading {
+            font-size: 20px;
+            color:blue;
+        }
+
+        #data {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+
+
+    </style>
 </head>
+
 <body style="background-color:gray">
-    
+
+    <h1>Simulated API call with loading</h1>
+    <button onclick="fetchData()">Fetch Data</button>
+    <p id="loading" style="display: none">loading...</p>
+    <p id="data"></p>
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
