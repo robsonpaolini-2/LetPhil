@@ -15,7 +15,12 @@ X   const cartTotal = itemCount + itemPrice;
 Y   console.log(`Cart: ${itemCount} items, total ${itemCount * itemPrice}`);
 ```
 
-`X` gives the wrong total. `Y` actually works — it produces the right output — but leaves `A` unused and skips the variable. If a mentee picks `Y` and explains why, that's a good answer. If they pick it without noticing `A` is left over, ask what `cartTotal` is for.
+`X` gives the wrong total. 
+`Y` actually works — it produces the right output — 
+but leaves `A` unused and skips the variable. If a mentee picks `Y` and explains why, that's a good answer. If they pick it without noticing `A` is left over, ask what `cartTotal` is for.
+
+
+
 
 ### 2. Modify
 
